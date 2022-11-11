@@ -9,3 +9,6 @@ publish: #публикация
 
 lint: # запуск линтера
 	npx eslint .
+
+brain-even: # запуск проверки на чётность
+	node bin/brain-even.js
