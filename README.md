@@ -8,6 +8,4 @@
 
 Use 'brain-even' command to start.
 
-[![asciicast](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7)](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7)
-
-
+[![asciicast](https://asciinema.org/a/c9R5WPxi4h2zG40AaVBOsqy9D.svg)](https://asciinema.org/a/c9R5WPxi4h2zG40AaVBOsqy9D)
