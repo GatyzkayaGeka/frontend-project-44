@@ -27,7 +27,7 @@ export const parityCheck = () => {
     const answerOdd = (random % 2 !== 0) && (answer === 'no');
 
     if ((answerHonest === true) || (answerOdd === true)) {
-      console.groupCollapsed('Correct!');
+      console.log('Correct!');
     } else {
       const answerAnother = (answer === 'yes' ? 'no' : 'yes');
       const answerIncorrect = `"${answer}" is wrong answer ;(. Correct answer was "${answerAnother}". /n Let's try again, "${name}"!`;
