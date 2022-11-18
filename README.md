@@ -10,9 +10,14 @@ Use 'brain-even' command to start.
 
 [![asciicast](https://asciinema.org/a/c9R5WPxi4h2zG40AaVBOsqy9D.svg)](https://asciinema.org/a/c9R5WPxi4h2zG40AaVBOsqy9D)
 
-
 ### asciinema Calculator
 
 Use 'brain-calc' command to start.
 
 [![asciicast](https://asciinema.org/a/538589.svg)](https://asciinema.org/a/538589)
+
+### asciinema NOD
+
+Use 'brain-gcd' command to start.
+
+[![asciicast](https://asciinema.org/a/538696.svg)](https://asciinema.org/a/538696)
