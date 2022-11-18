@@ -12,15 +12,17 @@ const basisGame = (rulesGame, exampleCalc) => {
 
   // сам цикл игры - повтор 3 раза
   for (let i = 0; i < 3; i += 1) {
-    console.log('Question: ', exampleCalc[1]);
+    const exampleIndex = exampleCalc();
+    const resultIndex = exampleIndex[0];
+    console.log('Question: ', exampleIndex[1]);
     const answer = readlineSync.question('Your answer: ');
 
     // проверка результата
 
-    if (exampleCalc[0] === answer) {
+    if (resultIndex === answer) {
       console.log('Correct!');
     } else {
-      const answerIncorrect = `"${answer}" is wrong answer ;(. Correct answer was "${exampleCalc[0]}". /n Let's try again, "${name}"!`;
+      const answerIncorrect = `"${answer}" is wrong answer ;(. Correct answer was "${resultIndex}". /n Let's try again, "${name}"!`;
       console.log(answerIncorrect);
       console.log(`Let's try again, "${name}!"`);
       return;
