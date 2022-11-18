@@ -15,3 +15,6 @@ brain-even: # запуск проверки на чётность
 
 brain-calc: # запуск калькулятора
 	node bin/brain-calc.js
+
+brain-gcd: # запуск "НОД" (наибольший общий делитель)
+	node bin/brain-gcd.js
