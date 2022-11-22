@@ -27,3 +27,9 @@ Use 'brain-gcd' command to start.
 Use 'brain-progression' command to start.
 
 [![asciicast](https://asciinema.org/a/539457.svg)](https://asciinema.org/a/539457)
+
+### asciinema PrimeNumber
+
+Use 'brain-prime' command to start.
+
+[![asciicast](https://asciinema.org/a/539549.svg)](https://asciinema.org/a/539549)

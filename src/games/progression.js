@@ -29,4 +29,3 @@ const arithmeticProgression = () => {
   basisGame(rulesGame, exampleCalc);
 };
 export default arithmeticProgression;
-
