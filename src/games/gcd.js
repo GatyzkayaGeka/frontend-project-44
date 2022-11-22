@@ -17,8 +17,8 @@ const greatestCommonDivisor = () => {
   };
 
   const exampleCalc = () => {
-    const random1 = getRandomInt(10);
-    const random2 = getRandomInt(10);
+    const random1 = getRandomInt(0, 10);
+    const random2 = getRandomInt(0, 10);
     const example = `${random1} ${random2}`;
     const result = gcd(random1, random2);
     return [String(result), example];

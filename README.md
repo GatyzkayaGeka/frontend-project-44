@@ -21,3 +21,9 @@ Use 'brain-calc' command to start.
 Use 'brain-gcd' command to start.
 
 [![asciicast](https://asciinema.org/a/538696.svg)](https://asciinema.org/a/538696)
+
+### asciinema Progression
+
+Use 'brain-progression' command to start.
+
+[![asciicast](https://asciinema.org/a/539457.svg)](https://asciinema.org/a/539457)

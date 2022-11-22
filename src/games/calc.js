@@ -6,10 +6,10 @@ const calculator = () => {
   const rulesGame = 'What is the result of the expression?';
 
   const exampleCalc = () => {
-    const random1 = getRandomInt(10);
-    const random2 = getRandomInt(10);
+    const random1 = getRandomInt(0, 10);
+    const random2 = getRandomInt(0, 10);
     const operators = ['*', '-', '+'];
-    const operator = operators[getRandomInt(3)];
+    const operator = operators[getRandomInt(0, 3)];
 
     const example = `${random1} ${operator} ${random2}`;
 

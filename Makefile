@@ -18,3 +18,6 @@ brain-calc: # запуск калькулятора
 
 brain-gcd: # запуск "НОД" (наибольший общий делитель)
 	node bin/brain-gcd.js
+
+brain-progression: # запуск "арифметическая прогрессия"
+	node bin/brain-progression.js
