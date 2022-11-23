@@ -9,7 +9,7 @@ const parityCheck = () => {
   const exampleCalc = () => {
     const example = getRandomInt(1, 50);
     const result = iEven(example) ? 'yes' : 'no';
-    return [result, example];
+    return [String(result), example];
   };
   basisGame(rulesGame, exampleCalc);
 };
