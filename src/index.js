@@ -22,12 +22,12 @@ const basisGame = (rulesGame, exampleGame) => {
     if (resultIndex === answer) {
       console.log('Correct!');
     } else {
-      const answerIncorrect = `"${answer}" is wrong answer ;(. Correct answer was "${resultIndex}". /n Let's try again, "${name}"!`;
+      const answerIncorrect = `${answer} is wrong answer ;(. Correct answer was ${resultIndex}. /n Let's try again, ${name}!`;
       console.log(answerIncorrect);
-      console.log(`Let's try again, "${name}!"`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
-  console.log(`Congratulations, "${name}!"`);
+  console.log(`Congratulations, ${name}!`);
 };
 export default basisGame;
