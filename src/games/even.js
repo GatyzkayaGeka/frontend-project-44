@@ -6,11 +6,11 @@ const parityCheck = () => {
   const rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".';
   const iEven = (number) => number % 2 === 0;
 
-  const exampleCalc = () => {
+  const exampleGame = () => {
     const example = getRandomInt(1, 50);
     const result = iEven(example) ? 'yes' : 'no';
     return [String(result), example];
   };
-  basisGame(rulesGame, exampleCalc);
+  basisGame(rulesGame, exampleGame);
 };
 export default parityCheck;

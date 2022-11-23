@@ -15,7 +15,7 @@ const arithmeticProgression = () => {
     return massivProgression;
   };
 
-  const exampleCalc = () => {
+  const exampleGame = () => {
     const oneNumber = getRandomInt(0, 10);
     const step = getRandomInt(1, 10);
     const massivProgression = progression(oneNumber, step);
@@ -26,6 +26,6 @@ const arithmeticProgression = () => {
 
     return [String(result), example];
   };
-  basisGame(rulesGame, exampleCalc);
+  basisGame(rulesGame, exampleGame);
 };
 export default arithmeticProgression;

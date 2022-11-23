@@ -16,7 +16,7 @@ const greatestCommonDivisor = () => {
     return (x + y);
   };
 
-  const exampleCalc = () => {
+  const exampleGame = () => {
     const random1 = getRandomInt(0, 10);
     const random2 = getRandomInt(0, 10);
     const example = `${random1} ${random2}`;
@@ -24,6 +24,6 @@ const greatestCommonDivisor = () => {
     return [String(result), example];
   };
 
-  basisGame(rulesGame, exampleCalc);
+  basisGame(rulesGame, exampleGame);
 };
 export default greatestCommonDivisor;

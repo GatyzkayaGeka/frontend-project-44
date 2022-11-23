@@ -20,12 +20,12 @@ const primeNumber = () => {
     return true;
   };
 
-  const exampleCalc = () => {
+  const exampleGame = () => {
     const example = getRandomInt(1, 50);
     const result = prime(example) ? 'yes' : 'no';
 
     return [String(result), example];
   };
-  basisGame(rulesGame, exampleCalc);
+  basisGame(rulesGame, exampleGame);
 };
 export default primeNumber;

@@ -5,7 +5,7 @@ import getRandomInt from '../getRandom.js';
 const calculator = () => {
   const rulesGame = 'What is the result of the expression?';
 
-  const exampleCalc = () => {
+  const exampleGame = () => {
     const random1 = getRandomInt(0, 10);
     const random2 = getRandomInt(0, 10);
     const operators = ['*', '-', '+'];
@@ -30,6 +30,6 @@ const calculator = () => {
     }
     return [String(result), example];
   };
-  basisGame(rulesGame, exampleCalc);
+  basisGame(rulesGame, exampleGame);
 };
 export default calculator;
