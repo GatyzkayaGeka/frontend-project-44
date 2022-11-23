@@ -7,7 +7,7 @@ const parityCheck = () => {
   const iEven = (number) => number % 2 === 0;
 
   const exampleCalc = () => {
-    const example = getRandomInt(0, 50);
+    const example = getRandomInt(1, 50);
     const result = iEven(example) ? 'yes' : 'no';
     return [result, example];
   };

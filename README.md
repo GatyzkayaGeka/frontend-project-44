@@ -14,7 +14,7 @@ Clone this repository to your computer. Write the "make install" command. Then u
 
 ## Games
 
-### asciinema Games
+### Parity check
 
 Answer "yes" if the number is even, otherwise answer "no".
 
@@ -22,7 +22,7 @@ Use 'brain-even' command to start.
 
 [![asciicast](https://asciinema.org/a/c9R5WPxi4h2zG40AaVBOsqy9D.svg)](https://asciinema.org/a/c9R5WPxi4h2zG40AaVBOsqy9D)
 
-### asciinema Calculator
+### Calculator
 
 What is the result of the expression?
 
@@ -30,7 +30,7 @@ Use 'brain-calc' command to start.
 
 [![asciicast](https://asciinema.org/a/538589.svg)](https://asciinema.org/a/538589)
 
-### asciinema NOD
+### NOD
 
 Find the greatest common divisor of given numbers.
 
@@ -38,7 +38,7 @@ Use 'brain-gcd' command to start.
 
 [![asciicast](https://asciinema.org/a/538696.svg)](https://asciinema.org/a/538696)
 
-### asciinema Progression
+### Progression
 
 What number is missing in the progression?
 
@@ -46,7 +46,7 @@ Use 'brain-progression' command to start.
 
 [![asciicast](https://asciinema.org/a/539457.svg)](https://asciinema.org/a/539457)
 
-### asciinema PrimeNumber
+### PrimeNumber
 
 Answer "yes" if given number is prime. Otherwise answer "no".
 
