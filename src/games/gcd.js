@@ -6,14 +6,10 @@ const greatestCommonDivisor = () => {
   const rulesGame = 'Find the greatest common divisor of given numbers.';
 
   const gcd = (x, y) => {
-    while ((x !== 0) && (y !== 0)) {
-      if (x > y) {
-        x = x % y;
-      } else {
-        y = y % x;
-      }
+    if (!y) {
+      return x;
     }
-    return (x + y);
+    return gcd(y, x % y);
   };
 
   const exampleGame = () => {

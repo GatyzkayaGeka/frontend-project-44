@@ -14,7 +14,7 @@ const basisGame = (rulesGame, exampleGame) => {
   for (let i = 0; i < 3; i += 1) {
     const exampleIndex = exampleGame();
     const resultIndex = exampleIndex[0];
-    console.log(`Question: ${String(exampleIndex[1])}`);
+    console.log(`Question: ${exampleIndex[1]}`);
     const answer = readlineSync.question('Your answer: ');
 
     // проверка результата
