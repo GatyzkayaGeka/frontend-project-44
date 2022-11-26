@@ -1,31 +1,29 @@
-import basisGame from '../index.js';
+import startGame from '../index.js';
 import getRandomInt from '../getRandom.js';
+
+const ruleGame = 'What number is missing in the progression?';
+const progLength = 10;
 
 // Арифметическая прогрессия
 
-const arithmeticProgression = () => {
-  const rulesGame = 'What number is missing in the progression?';
-  const progLength = 10;
-
-  const progression = (oneNumber, step) => {
-    const massivProgression = [];
-    for (let i = 0; i < progLength; i += 1) {
-      massivProgression.push(oneNumber + (step * i));
-    }
-    return massivProgression;
-  };
-
-  const exampleGame = () => {
-    const oneNumber = getRandomInt(0, 10);
-    const step = getRandomInt(1, 10);
-    const massivProgression = progression(oneNumber, step);
-    const closedNumber = getRandomInt(0, progression.length - 1);
-    const result = massivProgression[closedNumber];
-    massivProgression[closedNumber] = '..';
-    const example = massivProgression.join(' ');
-
-    return [String(result), example];
-  };
-  basisGame(rulesGame, exampleGame);
+const progression = (firstNumber, lengthStep) => {
+  const progressions = [];
+  for (let i = 0; i < progLength; i += 1) {
+    progressions.push(firstNumber + (lengthStep * i));
+  }
+  return progressions;
 };
-export default arithmeticProgression;
+
+const gettingGameData = () => {
+  const firstNumber = getRandomInt(0, 10);
+  const lengthStep = getRandomInt(1, 10);
+  const progressions = progression(firstNumber, lengthStep);
+  const closedNumber = getRandomInt(0, progression.length - 1);
+  const result = progressions[closedNumber];
+  progressions[closedNumber] = '..';
+  const example = progressions.join(' ');
+
+  return [String(result), example];
+};
+
+export default () => startGame(ruleGame, gettingGameData);

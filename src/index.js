@@ -1,33 +1,33 @@
 // функция узнавания имени и приветствия
 import readlineSync from 'readline-sync';
 
-const basisGame = (rulesGame, exampleGame) => {
+const rounds = 3;
+
+const startGame = (ruleGame, gettingGameData) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 
   // правила игры, задание
-  console.log(rulesGame);
+  console.log(ruleGame);
 
   // сам цикл игры - повтор 3 раза
-  for (let i = 0; i < 3; i += 1) {
-    const exampleIndex = exampleGame();
-    const resultIndex = exampleIndex[0];
-    console.log(`Question: ${exampleIndex[1]}`);
+  for (let i = 0; i < rounds; i += 1) {
+    const [result, example] = gettingGameData();
+    console.log(`Question: ${example}`);
     const answer = readlineSync.question('Your answer: ');
 
     // проверка результата
 
-    if (resultIndex === answer) {
+    if (result === answer) {
       console.log('Correct!');
     } else {
-      const answerIncorrect = `${answer} is wrong answer ;(. Correct answer was ${resultIndex}. /n Let's try again, ${name}!`;
-      console.log(answerIncorrect);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${result}. /n Let's try again, ${name}!`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
   }
   console.log(`Congratulations, ${name}!`);
 };
-export default basisGame;
+export default startGame;

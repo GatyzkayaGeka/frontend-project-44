@@ -8,6 +8,9 @@
 
 #### Not difficult console games with arithmetic
 
+Operating system required: Ubuntu or other Linux system, macOS, Windows with WSL2.
+Make sure you have Node.js version 13 or higher installed. 
+
 ## Games start
 
 Clone this repository to your computer. Write the "make install" command. Then use "npm link". Good game.

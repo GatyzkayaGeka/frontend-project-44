@@ -1,35 +1,31 @@
-import basisGame from '../index.js';
+import startGame from '../index.js';
 import getRandomInt from '../getRandom.js';
 
-// функция калькулятора
-const calculator = () => {
-  const rulesGame = 'What is the result of the expression?';
+const ruleGame = 'What is the result of the expression?';
+const operators = ['*', '-', '+'];
 
-  const exampleGame = () => {
-    const random1 = getRandomInt(0, 10);
-    const random2 = getRandomInt(0, 10);
-    const operators = ['*', '-', '+'];
-    const operator = operators[getRandomInt(0, 3)];
+// выбор оператора
 
-    const example = `${random1} ${operator} ${random2}`;
-
-    // выбор оператора
-    let result;
-    switch (operator) {
-      case '+':
-        result = random1 + random2;
-        break;
-      case '-':
-        result = random1 - random2;
-        break;
-      case '*':
-        result = random1 * random2;
-        break;
-      default:
-        result = null;
-    }
-    return [String(result), example];
-  };
-  basisGame(rulesGame, exampleGame);
+const operationSelection = (num1, num2, operation) => {
+  switch (operation) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      throw new Error(`operation ${operation} not performed`);
+  }
 };
-export default calculator;
+
+const gettingGameData = () => {
+  const randomNumber1 = getRandomInt(0, 10);
+  const randomNumber2 = getRandomInt(0, 10);
+  const operator = operators[getRandomInt(0, operators.length - 1)];
+  const example = `${randomNumber1} ${operator} ${randomNumber2}`;
+  const result = operationSelection(randomNumber1, randomNumber2, operator);
+  return [String(result), example];
+};
+
+export default () => startGame(ruleGame, gettingGameData);

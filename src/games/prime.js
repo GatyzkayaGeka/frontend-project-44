@@ -1,31 +1,28 @@
-import basisGame from '../index.js';
+import startGame from '../index.js';
 import getRandomInt from '../getRandom.js';
+
+const ruleGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
 // Простое ли число
 
-const primeNumber = () => {
-  const rulesGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-
-  const prime = (number) => {
-    if (number < 2) {
+const isprime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+  for (let diveder = 2; diveder <= number / 2; diveder += 1) {
+    if (number % diveder === 0) {
       return false;
     }
-    let diveder = 2;
-    while (diveder <= number / 2) {
-      if (number % diveder === 0) {
-        return false;
-      }
-      diveder += 1;
-    }
-    return true;
-  };
-
-  const exampleGame = () => {
-    const example = getRandomInt(1, 50);
-    const result = prime(example) ? 'yes' : 'no';
-
-    return [String(result), example];
-  };
-  basisGame(rulesGame, exampleGame);
+  }
+  return true;
 };
-export default primeNumber;
+
+const gettingGameData = () => {
+  const randomPrimeNumber = getRandomInt(1, 50);
+  const example = randomPrimeNumber;
+  const result = isprime(example) ? 'yes' : 'no';
+
+  return [String(result), example];
+};
+
+export default () => startGame(ruleGame, gettingGameData);
