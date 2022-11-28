@@ -8,9 +8,9 @@ const maxRandomNumber = 10;
 
 // Арифметическая прогрессия
 
-const defineProgression = (firstNumber, lengthStep, progLength) => {
+const defineProgression = (firstNumber, lengthStep, progressionLength) => {
   const progressions = [];
-  for (let i = 0; i < progLength; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     progressions.push(firstNumber + (lengthStep * i));
   }
   return progressions;
